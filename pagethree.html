@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>💬</title>
+  <style>
+    body {
+      background: #ffc0cb;
+      font-family: Arial;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    h1 { margin-top: 120px; }
+    button {
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+    }
+    #yes { background:#ff4d6d; color:#fff; left:40%; top:300px; }
+    #no  { background:#666; color:#fff; left:55%; top:300px; }
+  </style>
+</head>
+<body>
+
+<h1>Do you enjoy talking to me? 💬❤️</h1>
+
+<button id="yes" onclick="location.href='final.html'">YES 💕</button>
+<button id="no">NO 😐</button>
+
+<script>
+let size = 18;
+const no = document.getElementById("no");
+
+no.onmouseover = () => {
+  size -= 2;
+  no.style.fontSize = size + "px";
+  no.style.left = Math.random() * 80 + "%";
+  no.style.top  = Math.random() * 80 + "%";
+};
+</script>
+
+</body>
+</html>
+
